@@ -3,10 +3,9 @@ import "@testing-library/jest-dom";
 import { fireEvent, render, screen } from "@testing-library/react";
 
 
-describe("Calculator", () => {
+describe("interview-app", () => {
     it("renders a homepage", () => {
       render(<Home />);
-      // check if all components are rendered
-
+      expect(screen.getByText("Winden!")).toBeInTheDocument();
     });
   });
